@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Website</title>
+		
+		<link rel="stylesheet" type="text/css" href="Madalena.css">
+		<meta name="viewport" content="width=device-width, initial- scale=1.0">
+	</head>
+	
+	<body>
+	
+	
+		<header>
+		<a id="menu_icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+					</svg>
+				</a>
+						
+		<div id="drawer">
+			<nav>		
+			<a href="#C4"> Doces Tradicionais </a>
+			<a href="#C5"> Ingredientes Indespensáveis </a>
+			<a href="#C6"> Imagens </a>
+			<a href="#C7"> Video </a>
+			<a href="#C8"> Tabela </a>
+			</nav>
+			</div>
+		
+		<h1>Doçaria Japonesa</h1>
+			<p> Conheça a doçaria Japonesa
+			</p>
+			
+		</header>
+		 
+		<nav id="tabletPC" class="col-3">
+		 		 
+		<p><a href="#C4"> Doces Tradicionais </a></p>
+		<p><a href="#C5"> Ingredientes Indespensáveis </a></p>
+		<p><a href="#C6"> Imagens </a></p>
+		<p><a href="#C7"> Video </a></p>
+		<p><a href="#C8"> Tabela </a></p>
+		
+		</nav>
+		
+		<div id="container" class="col-9">
+		
+		
+		<section class="slideshow-container">
+		
+			<h2>HTML Slideshow</h2>
+				<article class="mySlides">
+				<figure>
+				<img src="images/img1.jpg">
+				<figcaption>Dango</figcaption>
+				</figure>
+				</article>
+			
+				<article class="mySlides">
+				<figure>
+				<img src="images/img2.jpg">
+				<figcaption>Yokan</figcaption>
+				</figure>
+				</article>
+				
+				<article class="mySlides">
+				
+				<figure>
+				<img src="images/img3.jpg">
+				<figcaption>Taiyaki</figcaption>
+				</figure>
+				</article>
+				
+				<div class="dotpoints">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+		</section>
+			
+		<section>
+		
+		<h2 id="C4">Doces Tradicionais</h2>
+		<i>A doçaria tradicional japonesa não é muito vasta, mas apresentam sempre um fino paladar e um design de tirar o fôlego.
+		Aqui estão cinco dos principais doces :</i>
+		<ul>
+			<li> Kasutera, </li>
+			<li> Yokan, </li>
+			<li> Manju, </li>
+			<li> Oshiruko, </li>
+			<li> Dango.
+			</li>
+		</ul>
+		</section>
+		
+		
+		<section>
+		
+		<h2 id="C5">Ingredientes Indespensáveis</h2>
+			Alguns dos ingredientes mais usados na doçaria tradicional japonesa
+		<ol>
+			<li><u> Pasta de Feijão Azuki </u></li>
+			<li><u> Flores de Cerejeira </u></li>
+			<li><u> Kuzu </u></li>
+			<li><u> Agar </u></li>
+			<li><u> Miso </u></li>
+		</ol>
+		
+		</section>
+		
+		<section>
+		
+		<a name="C6">
+		<h4> Galeria </h2>
+		<img src = "http://www.japanesecooking101.com/wp-content/uploads/2016/11/IMG_9331-550x460.jpg"
+width="800" height="auto">
+		<img src = "https://fae-magazine.com/wp-content/uploads/2013/11/castella-e382abe382b9e38386e383a9.jpg" width="800" height="auto">
+		
+		</section>
+		
+		<section>
+		
+		
+		<a name="C7">
+		<h5> Intro </h5>
+		 <iframe width="420" height="315"
+			src="https://www.youtube.com/embed/rGNNSb8Jg_w">
+		</iframe> 
+		
+		</section>
+		
+		<section>
+		
+		<h2>Receitas</h2>
+		Para um melhor conhecimento destes pratos serão apresentadas algumas das receitas anteriormente faladas.
+		
+		</section>
+		
+		<section>
+		
+		<a name="C8">
+		<table border=“1px”>
+		<th colspan="3"> Heading </th>
+		<tr>
+			<td> Kasutera </td> <td> 2230 Kcal </td> 
+			</tr>
+			<tr>
+				<td rowspan=”4"> Yokan)</td>
+				<td rowspan="3"> Cell Spanning in 2 Rows (1st and 2nd Cell
+			merged) </td>
+				<td> 1st Cell </td>
+			</tr>
+			<tr>
+				<td> 2nd Cell </td>
+			</tr>
+			<tr>
+				<td> 3rd Cell </td>
+			</tr>
+			<tr>
+				<td> 3rd Cell </td> <td> 4th Cell </td>
+		</tr>
+	</table>
+	</section>
+
+	</div>
+
+	<aside class="col-2">
+		<h1>Receita Japonesas</h1>
+		<p> Duração média 1h </p>
+	</aside>
+
+	<footer>
+		<h2>Criado por Madalena Ventura </h2>
+	</footer> 
+		
+		
+	<script>
+			var slideIndex = 0;
+			showSlides();
+			function showSlides() {
+			
+			var i = null;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex> slides.length) {slideIndex = 1}
+			
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 3000); // Change image every 3 seconds
+			}
+			
+			var menu_icon = document.querySelector('#menu_icon');
+			var container = document.querySelector("#container");
+			var drawer = document.querySelector('#drawer');
+
+			menu_icon.addEventListener('click', function (e) {
+				drawer.classList.toggle('open');
+				e.stopPropagation();
+			});
+			container.addEventListener('click', function () {
+				drawer.classList.remove('open');
+			});
+
+	</script>
+
+			
+	</body>
+	
+	<!---Content ends here -->
+	
+</html>
